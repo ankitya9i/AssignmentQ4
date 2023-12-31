@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h3>Compay Metrices</h3>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">$406411.29</h5>
+          <p class="card-text">Total Revenue</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">$620</h5>
+          <p class="card-text">Total Jobs Avg</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">655</h5>
+          <p class="card-text">Tickest Created</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">735</h5>
+          <p class="card-text">Tickest Scheduled</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title ">110,448.8</h5>
+          <p class="card-text">Outstanding Amount</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">105</h5>
+            <p class="card-text">Memberships Sold</p>
+          </div>
+        </div>
+      </div>     
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">436</h5>
+          <p class="card-text">Jobs Completed</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">65</h5>
+            <p class="card-text">Total Cancled</p>
+          </div>
+        </div>
+      </div>    
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+        
+            <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+var xValues =   [25000,20000,15000,10000,5000,0];
+var yValues =   ["Everett", "Seattle", "Lynnwood", "Bothell", "Mukilteo","Edmonds"];
+var barColors = ["green", "green","green","green","green"];
+
+new Chart("myChart", {
+  type: "horizontalBar", // Change the chart type to horizontalBar
+  data: {
+    labels: yValues, // Swap yValues and xValues
+    datasets: [{
+      backgroundColor: barColors,
+      data: xValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Revenue By job Location"
+    }
+  }
+});
+new Chart("myChart2", {
+  type: "horizontalBar", // Change the chart type to horizontalBar
+  data: {
+    labels: yValues, // Swap yValues and xValues
+    datasets: [{
+      backgroundColor: barColors,
+      data: xValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Revenue By job Location"
+    }
+  }
+});
+</script>
+
+</body>
+</html>

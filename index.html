@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<div class="fromcompo" id="loginForm">
+  <form action="">
+    <img src="img2.png" alt="" />
+    <input type="text" placeholder="username" id="username" />
+
+    <input type="password" placeholder="password" id="password" />
+
+    <button class="btn" onclick=validateLogin()>Login</button>
+    <p id="errorMessage"></p>
+    <a class="mylink" href="" onclick="handleForgotPassword()">Forgot Your password</a>
+  </form>
+</div>
+
+<div id="dashboard" style="display: none;">
+  <h2>Welcome to the Dashboard</h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

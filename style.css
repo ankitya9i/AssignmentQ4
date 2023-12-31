@@ -1,0 +1,16 @@
+
+  .card{
+    border: none;
+    box-shadow: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .card {
+    border-left: 10px solid; /* Adjust the width of the colored line */
+  }
+
+  /* Colors for the left border of each card */
+  .card:nth-child(1) {
+    border-color: rgb(33, 183, 33);
+  }
+
+

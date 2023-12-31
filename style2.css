@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Light black overall background color */
+    color: #ffffff; /* Set text color to white */
+  }
+  
+  .fromcompo {
+    max-width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #000000; /* Black background color for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    background-color: #4caf50;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 10px; /* Adjust spacing */
+  }
+  
+  .mylink {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .mylink:hover {
+    text-decoration: underline;
+  }
+  
+  #dashboard {
+    max-width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #000000; /* Black background color for the dashboard */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
